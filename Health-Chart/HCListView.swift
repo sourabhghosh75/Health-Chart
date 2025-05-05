@@ -22,41 +22,53 @@ struct HCListView: View {
     @State private var containerCornerRadius: CGFloat = 1
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 40) {
-            VStack(alignment: .leading, spacing: 12) {
-                /*Text("Default CustomizableSegmentedControl")
-                    .padding(.horizontal, 2)*/
-
-                CustomizableSegmentedControl(
-                    selection: $selection,
-                    options: options,
-                    selectionView: selectionView(),
-                    segmentContent: { option, _, isPressed in
-                        segmentView(title: option.title, imageName: option.imageName, isPressed: isPressed)
-                            .colorMultiply(selection == option ? Color.white : .red)
-                            .animation(.default, value: selection)
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 40) {
+                VStack(alignment: .leading, spacing: 12) {
+                    
+                    CustomizableSegmentedControl(
+                        selection: $selection,
+                        options: options,
+                        selectionView: selectionView(),
+                        segmentContent: { option, _, isPressed in
+                            segmentView(title: option.title, imageName: option.imageName, isPressed: isPressed)
+                                .colorMultiply(selection == option ? Color.white : .red)
+                                .animation(.default, value: selection)
+                        }
+                    )
+                    .segmentAccessibilityValue { index, totalSegmentsCount in
+                        "Custom accessibility value. Current segment is \(index) of \(totalSegmentsCount)"
                     }
-                )
-                .segmentAccessibilityValue { index, totalSegmentsCount in
-                    "Custom accessibility value. Current segment is \(index) of \(totalSegmentsCount)"
+                    .insets(insets)
+                    .segmentedControlSlidingAnimation(animationSelection.value)
+                    .segmentedControl(interSegmentSpacing: interSegmentSpacing)
+                    .background(Color.white)
+                    .background {
+                        RoundedRectangle(cornerRadius: containerCornerRadius)
+                            .fill(.gray)
+                            .stroke(.red, lineWidth: 2)
+                    }
                 }
-                .insets(insets)
-                .segmentedControlSlidingAnimation(animationSelection.value)
-                .segmentedControl(interSegmentSpacing: interSegmentSpacing)
-                .background(Color.white)
-                .background {
-                    RoundedRectangle(cornerRadius: containerCornerRadius)
-                        .fill(.gray)
-                        .stroke(.red, lineWidth: 2)
+                List {
+                    Text("Hello World")
+                    Text("Hello World")
+                    Text("Hello World")
                 }
+                Button("Next >") {
+                    print("Button tapped!")
+                }
+                .frame(maxWidth: .infinity,maxHeight: 50)
+                .foregroundStyle(.white)
+                .background(Color.yellow)
+                
             }
-            Spacer()
-           
+            
+            .font(.system(size: 18, weight: .bold, design: .rounded))
+            .padding()
+            .navigationTitle("List")
+            .navigationBarTitleDisplayMode(.inline)
         }
         
-        
-        .font(.system(size: 18, weight: .bold, design: .rounded))
-        .padding()
     }
 
     private func selectionView(color: Color = .red) -> some View {
