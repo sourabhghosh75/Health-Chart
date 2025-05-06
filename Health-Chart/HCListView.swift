@@ -20,7 +20,7 @@ struct HCListView: View {
     private let animationOptions: [SegmentedControlAnimation] = SegmentedControlAnimation.allCases
 
     @State private var containerCornerRadius: CGFloat = 1
-
+    @State private var showDetails = false
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 40) {
@@ -54,12 +54,14 @@ struct HCListView: View {
                     Text("Hello World")
                     Text("Hello World")
                 }
-                Button("Next >") {
-                    print("Button tapped!")
+                Button {
+                    showDetails = true
+                } label: {
+                    Text("Next >")
+                        .frame(maxWidth: .infinity,maxHeight: 50)
+                        .foregroundStyle(.white)
+                        .background(Color.yellow)
                 }
-                .frame(maxWidth: .infinity,maxHeight: 50)
-                .foregroundStyle(.white)
-                .background(Color.yellow)
                 
             }
             
@@ -67,6 +69,10 @@ struct HCListView: View {
             .padding()
             .navigationTitle("List")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(isPresented: $showDetails) {
+                HCChartDetailsView()
+            }
+
         }
         
     }
