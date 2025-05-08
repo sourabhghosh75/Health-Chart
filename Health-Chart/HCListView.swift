@@ -70,7 +70,7 @@ struct HCListView: View {
             .navigationTitle("List")
             .navigationBarTitleDisplayMode(.inline)
             .navigationDestination(isPresented: $showDetails) {
-                HCChartDetailsView()
+                HCChartDetailsView(isOverview: false)
             }
 
         }
