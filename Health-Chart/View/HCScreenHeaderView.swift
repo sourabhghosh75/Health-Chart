@@ -9,9 +9,11 @@ import SwiftUI
 
 struct HCScreenHeaderView: View {
     @Environment(\.colorScheme) private var colorScheme
-
+    var isForListView : Bool? = false
     @State private var selection: Option = .first
     private let options: [Option] = [.first, .second, .third]
+    @State private var selection2: Option2 = .first
+    private let options2: [Option2] = [.first, .second, .third]
     private let insets: EdgeInsets = .init(top: 4, leading: 4, bottom: 4, trailing: 4)
     private let interSegmentSpacing: CGFloat = 2
 
@@ -22,22 +24,13 @@ struct HCScreenHeaderView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            CustomizableSegmentedControl(
-                selection: $selection,
-                options: options,
-                selectionView: selectionView(),
-                segmentContent: { option, _, isPressed in
-                    segmentView(title: option.title, imageName: option.imageName, isPressed: isPressed)
-                        .colorMultiply(selection == option ? Color.white : .red)
-                        .animation(.default, value: selection)
+            VStack {
+                if isForListView ?? false {
+                    customizableSegmentedControlForList()
+                } else {
+                    customizableSegmentedControlForDetails()
                 }
-            )
-            .segmentAccessibilityValue { index, totalSegmentsCount in
-                "Custom accessibility value. Current segment is \(index) of \(totalSegmentsCount)"
             }
-            .insets(insets)
-            .segmentedControlSlidingAnimation(animationSelection.value)
-            .segmentedControl(interSegmentSpacing: interSegmentSpacing)
             .background(Color.white)
             .background {
                 RoundedRectangle(cornerRadius: containerCornerRadius)
@@ -47,6 +40,42 @@ struct HCScreenHeaderView: View {
         }
         .font(.system(size: 18, weight: .bold, design: .rounded))
         .padding()
+    }
+    private func customizableSegmentedControlForDetails() -> some View {
+        CustomizableSegmentedControl(
+            selection: $selection,
+            options: options,
+            selectionView: selectionView(),
+            segmentContent: { option, _, isPressed in
+                segmentView(title: option.title, imageName: option.imageName, isPressed: isPressed)
+                    .colorMultiply(selection == option ? Color.white : .red)
+                    .animation(.default, value: selection)
+            }
+        )
+        .segmentAccessibilityValue { index, totalSegmentsCount in
+            "Custom accessibility value. Current segment is \(index) of \(totalSegmentsCount)"
+        }
+        .insets(insets)
+        .segmentedControlSlidingAnimation(animationSelection.value)
+        .segmentedControl(interSegmentSpacing: interSegmentSpacing)
+    }
+    private func customizableSegmentedControlForList() -> some View {
+        CustomizableSegmentedControl(
+            selection: $selection2,
+            options: options2,
+            selectionView: selectionView(),
+            segmentContent: { option, _, isPressed in
+                segmentView(title: option.title, imageName: option.imageName, isPressed: isPressed)
+                    .colorMultiply(selection2 == option ? Color.white : .red)
+                    .animation(.default, value: selection)
+            }
+        )
+        .segmentAccessibilityValue { index, totalSegmentsCount in
+            "Custom accessibility value. Current segment is \(index) of \(totalSegmentsCount)"
+        }
+        .insets(insets)
+        .segmentedControlSlidingAnimation(animationSelection.value)
+        .segmentedControl(interSegmentSpacing: interSegmentSpacing)
     }
     private func selectionView(color: Color = .red) -> some View {
         color
@@ -68,7 +97,7 @@ struct HCScreenHeaderView: View {
     }
 
     private var animationPicker: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 0) {
             Text("Sliding animation")
                 .padding(.horizontal, 2)
 
@@ -103,6 +132,23 @@ private extension HCScreenHeaderView {
         case first = "Recent"
         case second = "Weekly"
         case third = "Monthly"
+
+        var id: String { rawValue }
+        var title: String { rawValue.capitalized }
+        var imageName: String? {
+            switch self {
+            case .first, .second, .third:
+                    return nil
+               /* case .second:
+                    return "suit.heart.fill"*/
+            }
+        }
+    }
+    
+    enum Option2: String, CaseIterable, Identifiable, Hashable {
+        case first = "Weight"
+        case second = "Blood Pressure"
+        case third = "Sugar"
 
         var id: String { rawValue }
         var title: String { rawValue.capitalized }

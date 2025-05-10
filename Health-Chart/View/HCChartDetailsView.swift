@@ -33,9 +33,10 @@ struct HCChartDetailsView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading, spacing: 40) {
+            VStack(alignment: .leading, spacing: 0) {
                 
                 HCScreenHeaderView()
+                    
                 if isOverview {
                     chart
                         .allowsHitTesting(false)
@@ -45,10 +46,9 @@ struct HCChartDetailsView: View {
                             chart
                         }
                     }
-                    .navigationBarTitle("Chart Details", displayMode: .inline)
                 }
             }
-            
+            .navigationBarTitle("Chart Details", displayMode: .inline)
         }
     }
 
