@@ -1,5 +1,5 @@
 //
-// Copyright © 2022 Swift Charts Examples.
+// Copyright © 2025 Swift Charts Examples.
 // Open Source - MIT License
 
 import Foundation
@@ -17,36 +17,36 @@ enum Constants {
 enum SalesData {
     /// Sales by day for the last 30 days.
     static let last30Days = [
-        (day: date(year: 2022, month: 5, day: 8), sales: 168),
-        (day: date(year: 2022, month: 5, day: 9), sales: 117),
-        (day: date(year: 2022, month: 5, day: 10), sales: 106),
-        (day: date(year: 2022, month: 5, day: 11), sales: 119),
-        (day: date(year: 2022, month: 5, day: 12), sales: 109),
-        (day: date(year: 2022, month: 5, day: 13), sales: 104),
-        (day: date(year: 2022, month: 5, day: 14), sales: 196),
-        (day: date(year: 2022, month: 5, day: 15), sales: 172),
-        (day: date(year: 2022, month: 5, day: 16), sales: 122),
-        (day: date(year: 2022, month: 5, day: 17), sales: 115),
-        (day: date(year: 2022, month: 5, day: 18), sales: 138),
-        (day: date(year: 2022, month: 5, day: 19), sales: 110),
-        (day: date(year: 2022, month: 5, day: 20), sales: 106),
-        (day: date(year: 2022, month: 5, day: 21), sales: 187),
-        (day: date(year: 2022, month: 5, day: 22), sales: 187),
-        (day: date(year: 2022, month: 5, day: 23), sales: 119),
-        (day: date(year: 2022, month: 5, day: 24), sales: 160),
-        (day: date(year: 2022, month: 5, day: 25), sales: 144),
-        (day: date(year: 2022, month: 5, day: 26), sales: 152),
-        (day: date(year: 2022, month: 5, day: 27), sales: 148),
-        (day: date(year: 2022, month: 5, day: 28), sales: 240),
-        (day: date(year: 2022, month: 5, day: 29), sales: 242),
-        (day: date(year: 2022, month: 5, day: 30), sales: 173),
-        (day: date(year: 2022, month: 5, day: 31), sales: 143),
-        (day: date(year: 2022, month: 6, day: 1), sales: 137),
-        (day: date(year: 2022, month: 6, day: 2), sales: 123),
-        (day: date(year: 2022, month: 6, day: 3), sales: 146),
-        (day: date(year: 2022, month: 6, day: 4), sales: 214),
-        (day: date(year: 2022, month: 6, day: 5), sales: 250),
-        (day: date(year: 2022, month: 6, day: 6), sales: 146)
+        (day: date(year: 2025, month: 5, day: 8), sales: 168),
+        (day: date(year: 2025, month: 5, day: 9), sales: 117),
+        (day: date(year: 2025, month: 5, day: 10), sales: 106),
+        (day: date(year: 2025, month: 5, day: 11), sales: 119),
+        (day: date(year: 2025, month: 5, day: 12), sales: 109),
+        (day: date(year: 2025, month: 5, day: 13), sales: 104),
+        (day: date(year: 2025, month: 5, day: 14), sales: 196),
+        (day: date(year: 2025, month: 5, day: 15), sales: 172),
+        (day: date(year: 2025, month: 5, day: 16), sales: 122),
+        (day: date(year: 2025, month: 5, day: 17), sales: 115),
+        (day: date(year: 2025, month: 5, day: 18), sales: 138),
+        (day: date(year: 2025, month: 5, day: 19), sales: 110),
+        (day: date(year: 2025, month: 5, day: 20), sales: 106),
+        (day: date(year: 2025, month: 5, day: 21), sales: 187),
+        (day: date(year: 2025, month: 5, day: 22), sales: 187),
+        (day: date(year: 2025, month: 5, day: 23), sales: 119),
+        (day: date(year: 2025, month: 5, day: 24), sales: 160),
+        (day: date(year: 2025, month: 5, day: 25), sales: 144),
+        (day: date(year: 2025, month: 5, day: 26), sales: 152),
+        (day: date(year: 2025, month: 5, day: 27), sales: 148),
+        (day: date(year: 2025, month: 5, day: 28), sales: 240),
+        (day: date(year: 2025, month: 5, day: 29), sales: 242),
+        (day: date(year: 2025, month: 5, day: 30), sales: 173),
+        (day: date(year: 2025, month: 5, day: 31), sales: 143),
+        (day: date(year: 2025, month: 6, day: 1), sales: 137),
+        (day: date(year: 2025, month: 6, day: 2), sales: 123),
+        (day: date(year: 2025, month: 6, day: 3), sales: 146),
+        (day: date(year: 2025, month: 6, day: 4), sales: 214),
+        (day: date(year: 2025, month: 6, day: 5), sales: 250),
+        (day: date(year: 2025, month: 6, day: 6), sales: 146)
     ].map { Sale(day: $0.day, sales: $0.sales) }
 
     /// Total sales for the last 30 days.
@@ -66,12 +66,12 @@ enum SalesData {
         (month: date(year: 2021, month: 10), sales: 4217, dailyAverage: 136, dailyMin: 96, dailyMax: 193),
         (month: date(year: 2021, month: 11), sales: 4006, dailyAverage: 134, dailyMin: 104, dailyMax: 202),
         (month: date(year: 2021, month: 12), sales: 3994, dailyAverage: 129, dailyMin: 96, dailyMax: 190),
-        (month: date(year: 2022, month: 1), sales: 4202, dailyAverage: 136, dailyMin: 96, dailyMax: 203),
-        (month: date(year: 2022, month: 2), sales: 3749, dailyAverage: 134, dailyMin: 98, dailyMax: 200),
-        (month: date(year: 2022, month: 3), sales: 4329, dailyAverage: 140, dailyMin: 104, dailyMax: 218),
-        (month: date(year: 2022, month: 4), sales: 4084, dailyAverage: 136, dailyMin: 93, dailyMax: 221),
-        (month: date(year: 2022, month: 5), sales: 4559, dailyAverage: 147, dailyMin: 104, dailyMax: 242),
-        (month: date(year: 2022, month: 6), sales: 1023, dailyAverage: 170, dailyMin: 120, dailyMax: 250)
+        (month: date(year: 2025, month: 1), sales: 4202, dailyAverage: 136, dailyMin: 96, dailyMax: 203),
+        (month: date(year: 2025, month: 2), sales: 3749, dailyAverage: 134, dailyMin: 98, dailyMax: 200),
+        (month: date(year: 2025, month: 3), sales: 4329, dailyAverage: 140, dailyMin: 104, dailyMax: 218),
+        (month: date(year: 2025, month: 4), sales: 4084, dailyAverage: 136, dailyMin: 93, dailyMax: 221),
+        (month: date(year: 2025, month: 5), sales: 4559, dailyAverage: 147, dailyMin: 104, dailyMax: 242),
+        (month: date(year: 2025, month: 6), sales: 1023, dailyAverage: 170, dailyMin: 120, dailyMax: 250)
     ]
 
     /// Total sales for the last 12 months.
@@ -107,126 +107,126 @@ enum LocationData {
     /// Sales by location and weekday for the last 7 days.
     static let last7Days: [Series] = [
         .init(city: "Cupertino", sales: [
-            (weekday: date(year: 2022, month: 5, day: 1), sales: 54),
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 88),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 49),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 61),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 67)
+            (weekday: date(year: 2025, month: 5, day: 1), sales: 54),
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 88),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 49),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 61),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 67)
         ]),
         .init(city: "San Francisco", sales: [
-            (weekday: date(year: 2022, month: 5, day: 1), sales: 81),
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 90),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 52),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 72),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 137)
+            (weekday: date(year: 2025, month: 5, day: 1), sales: 81),
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 90),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 52),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 72),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 137)
         ])
     ]
 
     /// Sales by location and weekday for the last 30 days.
     static let last30Days: [Series] = [
         .init(city: "Cupertino", sales: [
-            (weekday: date(year: 2022, month: 5, day: 1), sales: 54),
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 88),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 49),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 61),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 67),
-            (weekday: date(year: 2022, month: 5, day: 8), sales: 54),
-            (weekday: date(year: 2022, month: 5, day: 9), sales: 47),
-            (weekday: date(year: 2022, month: 5, day: 10), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 11), sales: 71),
-            (weekday: date(year: 2022, month: 5, day: 12), sales: 56),
-            (weekday: date(year: 2022, month: 5, day: 13), sales: 81),
-            (weekday: date(year: 2022, month: 5, day: 14), sales: 40),
-            (weekday: date(year: 2022, month: 5, day: 15), sales: 49),
-            (weekday: date(year: 2022, month: 5, day: 16), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 17), sales: 58),
-            (weekday: date(year: 2022, month: 5, day: 18), sales: 66),
-            (weekday: date(year: 2022, month: 5, day: 19), sales: 62),
-            (weekday: date(year: 2022, month: 5, day: 20), sales: 77),
-            (weekday: date(year: 2022, month: 5, day: 21), sales: 55),
-            (weekday: date(year: 2022, month: 5, day: 22), sales: 52),
-            (weekday: date(year: 2022, month: 5, day: 23), sales: 42),
-            (weekday: date(year: 2022, month: 5, day: 24), sales: 49),
-            (weekday: date(year: 2022, month: 5, day: 25), sales: 58),
-            (weekday: date(year: 2022, month: 5, day: 26), sales: 61),
-            (weekday: date(year: 2022, month: 5, day: 27), sales: 68),
-            (weekday: date(year: 2022, month: 5, day: 28), sales: 43),
-            (weekday: date(year: 2022, month: 5, day: 29), sales: 49),
-            (weekday: date(year: 2022, month: 5, day: 30), sales: 125)
+            (weekday: date(year: 2025, month: 5, day: 1), sales: 54),
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 88),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 49),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 61),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 67),
+            (weekday: date(year: 2025, month: 5, day: 8), sales: 54),
+            (weekday: date(year: 2025, month: 5, day: 9), sales: 47),
+            (weekday: date(year: 2025, month: 5, day: 10), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 11), sales: 71),
+            (weekday: date(year: 2025, month: 5, day: 12), sales: 56),
+            (weekday: date(year: 2025, month: 5, day: 13), sales: 81),
+            (weekday: date(year: 2025, month: 5, day: 14), sales: 40),
+            (weekday: date(year: 2025, month: 5, day: 15), sales: 49),
+            (weekday: date(year: 2025, month: 5, day: 16), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 17), sales: 58),
+            (weekday: date(year: 2025, month: 5, day: 18), sales: 66),
+            (weekday: date(year: 2025, month: 5, day: 19), sales: 62),
+            (weekday: date(year: 2025, month: 5, day: 20), sales: 77),
+            (weekday: date(year: 2025, month: 5, day: 21), sales: 55),
+            (weekday: date(year: 2025, month: 5, day: 22), sales: 52),
+            (weekday: date(year: 2025, month: 5, day: 23), sales: 42),
+            (weekday: date(year: 2025, month: 5, day: 24), sales: 49),
+            (weekday: date(year: 2025, month: 5, day: 25), sales: 58),
+            (weekday: date(year: 2025, month: 5, day: 26), sales: 61),
+            (weekday: date(year: 2025, month: 5, day: 27), sales: 68),
+            (weekday: date(year: 2025, month: 5, day: 28), sales: 43),
+            (weekday: date(year: 2025, month: 5, day: 29), sales: 49),
+            (weekday: date(year: 2025, month: 5, day: 30), sales: 125)
         ]),
         .init(city: "San Francisco", sales: [
-            (weekday: date(year: 2022, month: 5, day: 1), sales: 81),
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 90),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 52),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 72),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 137),
-            (weekday: date(year: 2022, month: 5, day: 8), sales: 99),
-            (weekday: date(year: 2022, month: 5, day: 9), sales: 81),
-            (weekday: date(year: 2022, month: 5, day: 10), sales: 52),
-            (weekday: date(year: 2022, month: 5, day: 11), sales: 66),
-            (weekday: date(year: 2022, month: 5, day: 12), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 13), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 14), sales: 122),
-            (weekday: date(year: 2022, month: 5, day: 15), sales: 147),
-            (weekday: date(year: 2022, month: 5, day: 16), sales: 66),
-            (weekday: date(year: 2022, month: 5, day: 17), sales: 72),
-            (weekday: date(year: 2022, month: 5, day: 18), sales: 62),
-            (weekday: date(year: 2022, month: 5, day: 19), sales: 55),
-            (weekday: date(year: 2022, month: 5, day: 20), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 21), sales: 122),
-            (weekday: date(year: 2022, month: 5, day: 22), sales: 81),
-            (weekday: date(year: 2022, month: 5, day: 23), sales: 95),
-            (weekday: date(year: 2022, month: 5, day: 24), sales: 63),
-            (weekday: date(year: 2022, month: 5, day: 25), sales: 72),
-            (weekday: date(year: 2022, month: 5, day: 26), sales: 74),
-            (weekday: date(year: 2022, month: 5, day: 27), sales: 79),
-            (weekday: date(year: 2022, month: 5, day: 28), sales: 93),
-            (weekday: date(year: 2022, month: 5, day: 29), sales: 84),
-            (weekday: date(year: 2022, month: 5, day: 30), sales: 87)
+            (weekday: date(year: 2025, month: 5, day: 1), sales: 81),
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 90),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 52),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 72),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 137),
+            (weekday: date(year: 2025, month: 5, day: 8), sales: 99),
+            (weekday: date(year: 2025, month: 5, day: 9), sales: 81),
+            (weekday: date(year: 2025, month: 5, day: 10), sales: 52),
+            (weekday: date(year: 2025, month: 5, day: 11), sales: 66),
+            (weekday: date(year: 2025, month: 5, day: 12), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 13), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 14), sales: 122),
+            (weekday: date(year: 2025, month: 5, day: 15), sales: 147),
+            (weekday: date(year: 2025, month: 5, day: 16), sales: 66),
+            (weekday: date(year: 2025, month: 5, day: 17), sales: 72),
+            (weekday: date(year: 2025, month: 5, day: 18), sales: 62),
+            (weekday: date(year: 2025, month: 5, day: 19), sales: 55),
+            (weekday: date(year: 2025, month: 5, day: 20), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 21), sales: 122),
+            (weekday: date(year: 2025, month: 5, day: 22), sales: 81),
+            (weekday: date(year: 2025, month: 5, day: 23), sales: 95),
+            (weekday: date(year: 2025, month: 5, day: 24), sales: 63),
+            (weekday: date(year: 2025, month: 5, day: 25), sales: 72),
+            (weekday: date(year: 2025, month: 5, day: 26), sales: 74),
+            (weekday: date(year: 2025, month: 5, day: 27), sales: 79),
+            (weekday: date(year: 2025, month: 5, day: 28), sales: 93),
+            (weekday: date(year: 2025, month: 5, day: 29), sales: 84),
+            (weekday: date(year: 2025, month: 5, day: 30), sales: 87)
         ])
     ]
 
     /// The best weekday and location for the last 30 days.
     static let last30DaysBest = (
         city: "San Francisco",
-        weekday: date(year: 2022, month: 5, day: 8),
+        weekday: date(year: 2025, month: 5, day: 8),
         sales: 137
     )
 
     /// The best weekday and location for the last 12 months.
     static let last12MonthsBest = (
         city: "San Francisco",
-        weekday: date(year: 2022, month: 5, day: 8),
+        weekday: date(year: 2025, month: 5, day: 8),
         sales: 113
     )
 
     /// Sales by location and weekday for the last 12 months.
     static let last12Months: [Series] = [
         .init(city: "Cupertino", sales: [
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 64),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 60),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 47),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 55),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 55),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 105),
-            (weekday: date(year: 2022, month: 5, day: 8), sales: 67)
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 64),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 60),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 47),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 55),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 55),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 105),
+            (weekday: date(year: 2025, month: 5, day: 8), sales: 67)
         ]),
         .init(city: "San Francisco", sales: [
-            (weekday: date(year: 2022, month: 5, day: 2), sales: 57),
-            (weekday: date(year: 2022, month: 5, day: 3), sales: 56),
-            (weekday: date(year: 2022, month: 5, day: 4), sales: 66),
-            (weekday: date(year: 2022, month: 5, day: 5), sales: 61),
-            (weekday: date(year: 2022, month: 5, day: 6), sales: 60),
-            (weekday: date(year: 2022, month: 5, day: 7), sales: 77),
-            (weekday: date(year: 2022, month: 5, day: 8), sales: 113)
+            (weekday: date(year: 2025, month: 5, day: 2), sales: 57),
+            (weekday: date(year: 2025, month: 5, day: 3), sales: 56),
+            (weekday: date(year: 2025, month: 5, day: 4), sales: 66),
+            (weekday: date(year: 2025, month: 5, day: 5), sales: 61),
+            (weekday: date(year: 2025, month: 5, day: 6), sales: 60),
+            (weekday: date(year: 2025, month: 5, day: 7), sales: 77),
+            (weekday: date(year: 2025, month: 5, day: 8), sales: 113)
         ])
     ]
 }
@@ -301,22 +301,22 @@ struct DataUsageData {
 enum HeartRateData {
     /// Heart Rate for the last week
     static let lastWeek = [
-        (weekday: date(year: 2022, month: 7, day: 1), dailyAverage: 127, dailyMin: 95, dailyMax: 194),
-        (weekday: date(year: 2022, month: 7, day: 1), dailyAverage: 130, dailyMin: 200, dailyMax: 239),
+        (weekday: date(year: 2025, month: 7, day: 1), dailyAverage: 127, dailyMin: 95, dailyMax: 194),
+        (weekday: date(year: 2025, month: 7, day: 1), dailyAverage: 130, dailyMin: 200, dailyMax: 239),
 
-        (weekday: date(year: 2022, month: 7, day: 2), dailyAverage: 131, dailyMin: 101, dailyMax: 184),
+        (weekday: date(year: 2025, month: 7, day: 2), dailyAverage: 131, dailyMin: 101, dailyMax: 184),
 
-        (weekday: date(year: 2022, month: 7, day: 3), dailyAverage: 136, dailyMin: 96, dailyMax: 193),
-        (weekday: date(year: 2022, month: 7, day: 3), dailyAverage: 136, dailyMin: 80, dailyMax: 93),
+        (weekday: date(year: 2025, month: 7, day: 3), dailyAverage: 136, dailyMin: 96, dailyMax: 193),
+        (weekday: date(year: 2025, month: 7, day: 3), dailyAverage: 136, dailyMin: 80, dailyMax: 93),
 
-        (weekday: date(year: 2022, month: 7, day: 4), dailyAverage: 134, dailyMin: 104, dailyMax: 202),
+        (weekday: date(year: 2025, month: 7, day: 4), dailyAverage: 134, dailyMin: 104, dailyMax: 202),
 
-        (weekday: date(year: 2022, month: 7, day: 5), dailyAverage: 129, dailyMin: 90, dailyMax: 95),
-        (weekday: date(year: 2022, month: 7, day: 5), dailyAverage: 129, dailyMin: 96, dailyMax: 190),
+        (weekday: date(year: 2025, month: 7, day: 5), dailyAverage: 129, dailyMin: 90, dailyMax: 95),
+        (weekday: date(year: 2025, month: 7, day: 5), dailyAverage: 129, dailyMin: 96, dailyMax: 190),
 
-        (weekday: date(year: 2022, month: 7, day: 6), dailyAverage: 136, dailyMin: 96, dailyMax: 203),
+        (weekday: date(year: 2025, month: 7, day: 6), dailyAverage: 136, dailyMin: 96, dailyMax: 203),
 
-        (weekday: date(year: 2022, month: 7, day: 7), dailyAverage: 134, dailyMin: 98, dailyMax: 200)
+        (weekday: date(year: 2025, month: 7, day: 7), dailyAverage: 134, dailyMin: 98, dailyMax: 200)
     ]
 
     // MARK: - Static constants
@@ -355,35 +355,35 @@ enum HeartRateData {
 enum TimeSheetData {
     static let lastDay = [
         /// Monday
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 12, minutes: 04)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 10)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 01)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 18, minutes: 08))
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2025, month: 6, day: 13, hour: 09, minutes: 28)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2025, month: 6, day: 13, hour: 12, minutes: 04)),
+        (department: "Butchery", clockIn: date(year: 2025, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2025, month: 6, day: 13, hour: 15, minutes: 10)),
+        (department: "Butchery", clockIn: date(year: 2025, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2025, month: 6, day: 13, hour: 17, minutes: 01)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2025, month: 6, day: 13, hour: 18, minutes: 08))
         ]
     /// Time Sheet Date for the last week
     static let lastWeek = [
         /// Monday
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 28)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 13, hour: 12, minutes: 04)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 10)),
-        (department: "Butchery", clockIn: date(year: 2022, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 01)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2022, month: 6, day: 13, hour: 18, minutes: 08)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 13, hour: 08, minutes: 00), clockOut: date(year: 2025, month: 6, day: 13, hour: 09, minutes: 28)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 13, hour: 09, minutes: 47), clockOut: date(year: 2025, month: 6, day: 13, hour: 12, minutes: 04)),
+        (department: "Butchery", clockIn: date(year: 2025, month: 6, day: 13, hour: 13, minutes: 01), clockOut: date(year: 2025, month: 6, day: 13, hour: 15, minutes: 10)),
+        (department: "Butchery", clockIn: date(year: 2025, month: 6, day: 13, hour: 15, minutes: 33), clockOut: date(year: 2025, month: 6, day: 13, hour: 17, minutes: 01)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 13, hour: 17, minutes: 02), clockOut: date(year: 2025, month: 6, day: 13, hour: 18, minutes: 08)),
         /// Tuesday
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 08, minutes: 00), clockOut: date(year: 2022, month: 6, day: 14, hour: 09, minutes: 28)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 09, minutes: 47), clockOut: date(year: 2022, month: 6, day: 14, hour: 12, minutes: 04)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 13, minutes: 01), clockOut: date(year: 2022, month: 6, day: 14, hour: 15, minutes: 10)),
-        (department: "Bread", clockIn: date(year: 2022, month: 6, day: 14, hour: 15, minutes: 33), clockOut: date(year: 2022, month: 6, day: 14, hour: 17, minutes: 01)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 14, hour: 08, minutes: 00), clockOut: date(year: 2025, month: 6, day: 14, hour: 09, minutes: 28)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 14, hour: 09, minutes: 47), clockOut: date(year: 2025, month: 6, day: 14, hour: 12, minutes: 04)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 14, hour: 13, minutes: 01), clockOut: date(year: 2025, month: 6, day: 14, hour: 15, minutes: 10)),
+        (department: "Bread", clockIn: date(year: 2025, month: 6, day: 14, hour: 15, minutes: 33), clockOut: date(year: 2025, month: 6, day: 14, hour: 17, minutes: 01)),
         /// Wednesday
-        (department: "Counter", clockIn: date(year: 2022, month: 6, day: 15, hour: 15, minutes: 58), clockOut: date(year: 2022, month: 6, day: 15, hour: 18, minutes: 34)),
-        (department: "Counter", clockIn: date(year: 2022, month: 6, day: 15, hour: 19, minutes: 03), clockOut: date(year: 2022, month: 6, day: 15, hour: 22, minutes: 10)),
+        (department: "Counter", clockIn: date(year: 2025, month: 6, day: 15, hour: 15, minutes: 58), clockOut: date(year: 2025, month: 6, day: 15, hour: 18, minutes: 34)),
+        (department: "Counter", clockIn: date(year: 2025, month: 6, day: 15, hour: 19, minutes: 03), clockOut: date(year: 2025, month: 6, day: 15, hour: 22, minutes: 10)),
         /// Thursday
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 05, minutes: 15), clockOut: date(year: 2022, month: 6, day: 17, hour: 06, minutes: 13)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 06, minutes: 33), clockOut: date(year: 2022, month: 6, day: 17, hour: 08, minutes: 52)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 09, minutes: 15), clockOut: date(year: 2022, month: 6, day: 17, hour: 11, minutes: 46)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 12, minutes: 58), clockOut: date(year: 2022, month: 6, day: 17, hour: 14, minutes: 26)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 15, minutes: 05), clockOut: date(year: 2022, month: 6, day: 17, hour: 15, minutes: 51)),
-        (department: "Vegetables", clockIn: date(year: 2022, month: 6, day: 17, hour: 19, minutes: 33), clockOut: date(year: 2022, month: 6, day: 17, hour: 21, minutes: 01))
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 05, minutes: 15), clockOut: date(year: 2025, month: 6, day: 17, hour: 06, minutes: 13)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 06, minutes: 33), clockOut: date(year: 2025, month: 6, day: 17, hour: 08, minutes: 52)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 09, minutes: 15), clockOut: date(year: 2025, month: 6, day: 17, hour: 11, minutes: 46)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 12, minutes: 58), clockOut: date(year: 2025, month: 6, day: 17, hour: 14, minutes: 26)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 15, minutes: 05), clockOut: date(year: 2025, month: 6, day: 17, hour: 15, minutes: 51)),
+        (department: "Vegetables", clockIn: date(year: 2025, month: 6, day: 17, hour: 19, minutes: 33), clockOut: date(year: 2025, month: 6, day: 17, hour: 21, minutes: 01))
     ]
 }
 

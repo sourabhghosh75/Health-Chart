@@ -2,7 +2,7 @@
 //  CustomizableSegmentedControl+EnvironmentValues.swift
 //  
 //
-//  Created by Artyom Zagoskin on 10.10.2023.
+// Created by Sourabh Ghosh on 05/05/25.
 //
 
 import SwiftUI

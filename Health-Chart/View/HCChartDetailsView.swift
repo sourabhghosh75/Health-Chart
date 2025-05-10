@@ -32,16 +32,23 @@ struct HCChartDetailsView: View {
     }
 
     var body: some View {
-        if isOverview {
-            chart
-                .allowsHitTesting(false)
-        } else {
-            List {
-                Section {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 40) {
+                
+                HCScreenHeaderView()
+                if isOverview {
                     chart
+                        .allowsHitTesting(false)
+                } else {
+                    List {
+                        Section {
+                            chart
+                        }
+                    }
+                    .navigationBarTitle("Chart Details", displayMode: .inline)
                 }
             }
-            .navigationBarTitle("Chart Details", displayMode: .inline)
+            
         }
     }
 
